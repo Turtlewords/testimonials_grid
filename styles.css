@@ -1,0 +1,69 @@
+
+:root {
+    --black: #121212;
+    --dark-blue: #19202D;
+    --white: #FFFFFF;
+    --grey-100: #E7EAEE;
+    --grey-200: #CFCFCF;
+    --grey-400: #676D7E;
+    --grey-500: #48556A;
+    --purple-50: #EDE4FF;
+    --purple-300: #A775F1;
+    --purple-500: #733FC8;
+}
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: repeating-linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2) 40px, 
+        rgba(230, 230, 230, 0.2) 40px,
+        rgba(230, 230, 230, 0.2) 120px
+    ); 
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.hero {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hero-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h3 {
+    margin: 0;
+}
+
+.hero p {
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+}
+
+
+
+
+/* Images */
+
+
+.profile-img {
+    border-radius: 50px;
+}
+
+#daniel-img {
+    border: 5px solid var(--purple-300);
+}
+
