@@ -18,19 +18,25 @@
     box-sizing: border-box;
 }
 
+
+
 body {
+    
     background: repeating-linear-gradient(
         to right, 
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.2) 40px, 
+        rgba(245, 245, 245, 0.2),
+        rgba(245, 245, 245, 0.2) 40px, 
         rgba(230, 230, 230, 0.2) 40px,
         rgba(230, 230, 230, 0.2) 120px
     ); 
 }
 
-.card {
-    border-radius: 15px;
+main {
+    max-width: 750px;
+    height: 100%;
+    margin: 0 auto;
 }
+
 
 .hero {
     display: flex;
@@ -53,7 +59,42 @@ body {
     margin-bottom: 0;
 }
 
+.card {
+    border-radius: 10px;
+    color: whitesmoke;
+    padding: 2rem;
+    margin: 2rem;
+    opacity: 0.9;
+    
+    
+}
 
+#card-one {
+    background-color: var(--purple-500);
+    grid-area: one;
+}
+
+#card-two {
+    background-color: var(--grey-500);
+    grid-area: two;
+}
+
+#card-three {
+    background-color: whitesmoke;
+    color: var(--black);
+    grid-area: three;
+}
+
+#card-four {
+    background-color: var(--dark-blue);
+    grid-area: four;
+}
+
+#card-five {
+    background-color: whitesmoke;
+    color: var(--black);
+    grid-area: five;
+}
 
 
 /* Images */
@@ -63,7 +104,39 @@ body {
     border-radius: 50px;
 }
 
-#daniel-img {
+#daniel-img, #patrick-img {
     border: 5px solid var(--purple-300);
 }
 
+
+
+@media (min-width: 767px) {
+    main {
+        display: grid;
+        
+        grid-template-areas: 
+        "one one"
+        "two three"
+        "four four"
+        "five five";
+    }
+
+    .card {
+        max-height: 300px;
+    }
+
+   
+}
+
+@media (min-width: 1440px) {
+    main {
+       
+        max-width: initial;
+        grid-template-areas: 
+        "one one two five"
+        "three four four five";
+    }
+
+    
+    
+}
