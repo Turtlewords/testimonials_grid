@@ -25,7 +25,6 @@
 
 
 body {
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     background: repeating-linear-gradient(
@@ -96,6 +95,9 @@ main {
 #card-one {
     background-color: var(--purple-500);
     grid-area: one;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
 }
 
 #card-two {
@@ -130,19 +132,26 @@ footer {
 
 .profile-img {
     border-radius: 50px;
+    width: 35px;
 }
 
 #daniel-img, #patrick-img {
-    border: 5px solid var(--purple-300);
+    outline: 5px solid var(--purple-300);
 }
 
 @media (max-width: 767px) {
+    
+
     .card {
         margin: 2rem;
     }
 }
 
 @media (min-width: 767px) {
+    body {
+        padding: 2rem;
+    }
+
     main {
         display: grid;
         grid-gap:1.5rem;
@@ -170,7 +179,7 @@ footer {
         grid-template-areas: 
         "one    one  two  five"
         "three  four four five";
-        margin: 3rem auto;
+        margin: 5rem auto 3rem;
     }
 
     .card {
