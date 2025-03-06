@@ -12,15 +12,17 @@
     --purple-500: #733FC8;
 }
 
-
+.barlow-semi-condensed-medium {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
+
 
 body {
     
@@ -34,7 +36,6 @@ body {
 }
 
 main {
-    max-width: 750px;
     height: 100%;
     margin: 0 auto;
 }
@@ -49,16 +50,32 @@ main {
 .hero-header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
+    font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .hero h3 {
     margin: 0;
+    
+}
+
+.highlight {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 .hero p {
     margin-top: 0.3rem;
     margin-bottom: 0;
+    
+}
+
+.hero-body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    line-height: 1.4;;
 }
 
 .card {
@@ -123,6 +140,8 @@ footer {
     main {
         display: grid;
         grid-gap:1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
         grid-template-areas: 
         "one one"
         "two three"
@@ -138,10 +157,10 @@ footer {
 }
 
 @media (min-width: 1440px) {
+   
     main {
-       
-        max-width: initial;
-        
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "one    one  two  five"
         "three  four four five";
@@ -150,4 +169,6 @@ footer {
     .card {
         max-height: initial;
     }
+
+    
 }
