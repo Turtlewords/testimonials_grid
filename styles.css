@@ -18,6 +18,12 @@
     font-style: normal;
   }
 
+  .barlow-semi-condensed-semibold {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -43,6 +49,7 @@ h1 {
 main {
     height: 100%;
     margin: 0 auto;
+    max-width: 1122px;
 }
 
 
@@ -60,33 +67,45 @@ main {
     font-family: "Barlow Semi Condensed", sans-serif;
 }
 
+.hero-header p {
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 11px;
+}
+
 .hero h3 {
     margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+
     
 }
 
 .highlight {
     font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
 }
 
-.hero p {
+/* .hero p {
     margin-top: 0.3rem;
     margin-bottom: 0;
     
-}
+} */
 
 .hero-body {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 13px;
-    line-height: 1.4;;
+    line-height: 1.4;
+    margin: 0;
 }
 
 .card {
     border-radius: 10px;
     color: whitesmoke;
-    padding: 1rem;
+    padding: 1.5rem;
     opacity: 0.9;
     
     
