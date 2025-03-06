@@ -31,8 +31,11 @@
 
 
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: repeating-linear-gradient(
         to right, 
         rgba(245, 245, 245, 0.2),
@@ -107,6 +110,7 @@ main {
     color: whitesmoke;
     padding: 1.5rem;
     opacity: 0.9;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
     
 }
@@ -143,7 +147,7 @@ main {
 
 
 footer {
-    margin-top: auto;
+    margin-top: 2rem;
 }
 
 /* Images */
@@ -175,7 +179,6 @@ footer {
         display: grid;
         grid-gap:1.5rem;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
         grid-template-areas: 
         "one one"
         "two three"
@@ -193,12 +196,12 @@ footer {
 @media (min-width: 1440px) {
    
     main {
-        grid-template-columns: 250px 300px 250px 250px;
-        grid-template-rows: 300px 300px;
+        max-width: 70rem;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
         "one    one  two  five"
         "three  four four five";
-        margin: 5rem auto 3rem;
+        
     }
 
     .card {
