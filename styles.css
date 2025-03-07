@@ -36,13 +36,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: repeating-linear-gradient(
-        to right, 
-        rgba(245, 245, 245, 0.2),
-        rgba(245, 245, 245, 0.2) 40px, 
-        rgba(230, 230, 230, 0.2) 40px,
-        rgba(230, 230, 230, 0.2) 120px
-    ); 
+    
 }
 
 h1 {
